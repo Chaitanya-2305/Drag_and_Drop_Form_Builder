@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Form Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Drag and Drop Form Builder</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Form Fields</h3>
+            <div class="draggable" draggable="true" data-type="header">Header</div>
+            <div class="draggable" draggable="true" data-type="text">Text Input</div>
+            <div class="draggable" draggable="true" data-type="email">Email</div>
+            <div class="draggable" draggable="true" data-type="password">Password</div>
+            <div class="draggable" draggable="true" data-type="number">Number</div>
+            <div class="draggable" draggable="true" data-type="date">Date</div>
+            <div class="draggable" draggable="true" data-type="time">Time</div>
+            <div class="draggable" draggable="true" data-type="checkbox">Checkbox</div>
+            <div class="draggable" draggable="true" data-type="radio">Radio Button</div>
+            <div class="draggable" draggable="true" data-type="select">Dropdown</div>
+            <div class="draggable" draggable="true" data-type="textarea">Textarea</div>
+            <div class="draggable" draggable="true" data-type="submit">Submit Button</div>
+        </div>
+        <div class="form-container">
+            <h3>Drop Here</h3>
+            <form id="dynamic-form">
+                <div id="drop-zone" class="drop-zone">
+                    Drag and Drop Fields Here
+                </div>
+            </form>
+        </div>
+        <div class="sidebar settings-sidebar">
+            <h3>Settings</h3>
+            <label for="bg-color">Form Background Color:</label>
+            <input type="color" id="bg-color">
+            <button id="save-form">Save Form</button>
+            <div id="field-settings" class="settings-group">
+                <h4>Selected Field Properties</h4>
+                <label>Label Text:</label>
+                <input type="text" id="label-text" />
+                <label>Placeholder:</label>
+                <input type="text" id="placeholder-text" />
+                <label>Options:</label>
+                <input type="text" id="options-text" placeholder="Option1, Option2" />
+                <button id="delete-field" class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
